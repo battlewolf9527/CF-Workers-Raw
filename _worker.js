@@ -23,7 +23,7 @@ export default {
 			} else token = url.searchParams.get('token') || env.GH_TOKEN || env.TOKEN || token;
 			
 			const githubToken = token;
-			//console.log(githubToken);
+			console.log(githubToken);
 			if (!githubToken || githubToken == '') return new Response('TOKEN不能为空', { status: 400 });
 			
 			// 构建请求头
